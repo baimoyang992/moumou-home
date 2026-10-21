@@ -1,0 +1,18 @@
+FROM node:24-bookworm-slim
+WORKDIR /workspace
+RUN apt-get update && apt-get install -y --no-install-recommends python3 make g++ ca-certificates && rm -rf /var/lib/apt/lists/*
+RUN npm install -g pnpm@11.25.0
+COPY package.json pnpm-lock.yaml pnpm-workspace.yaml .npmrc ./
+COPY apps/web/package.json ./apps/web/package.json
+COPY apps/cms/package.json ./apps/cms/package.json
+RUN pnpm install --frozen-lockfile
+COPY --chown=node:node apps/cms ./apps/cms
+COPY --chown=node:node content ./content
+ARG PUBLIC_URL
+ENV PUBLIC_URL=$PUBLIC_URL STRAPI_TELEMETRY_DISABLED=true STRAPI_DISABLE_UPDATE_NOTIFICATION=true
+RUN pnpm --filter @home/cms build && chown -R node:node /workspace/apps/cms
+USER node
+WORKDIR /workspace/apps/cms
+ENV NODE_ENV=production HOST=0.0.0.0 PORT=1337
+EXPOSE 1337
+CMD ["node", "node_modules/@strapi/strapi/bin/strapi.js", "start"]

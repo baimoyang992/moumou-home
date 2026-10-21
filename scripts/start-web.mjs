@@ -1,0 +1,13 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import { spawn } from 'node:child_process';
+const app = path.resolve(import.meta.dirname, '../apps/web');
+const serverDir = path.join(app, '.next/standalone/apps/web');
+if (!fs.existsSync(path.join(serverDir, 'server.js'))) throw new Error('请先执行 pnpm build。');
+if (fs.existsSync(path.join(app, '.env.local'))) process.loadEnvFile(path.join(app, '.env.local'));
+fs.cpSync(path.join(app, 'public'), path.join(serverDir, 'public'), { recursive: true });
+fs.cpSync(path.join(app, '.next/static'), path.join(serverDir, '.next/static'), { recursive: true });
+const child = spawn(process.execPath, [path.join(serverDir, 'server.js')], { stdio: 'inherit', env: { ...process.env, NODE_ENV: 'production', PORT: process.env.PORT || '3000', HOSTNAME: '127.0.0.1', NEXT_TELEMETRY_DISABLED: '1' } });
+child.on('exit', (code) => { process.exitCode = code || 0; });
+process.on('SIGINT', () => child.kill('SIGINT'));
+process.on('SIGTERM', () => child.kill('SIGTERM'));

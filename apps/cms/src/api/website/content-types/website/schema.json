@@ -1,0 +1,91 @@
+{
+  "kind": "singleType",
+  "collectionName": "website",
+  "info": {
+    "singularName": "website",
+    "pluralName": "websites",
+    "displayName": "官网设置",
+    "description": "品牌、首页文案、联系方式与 SEO"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "brandName": {
+      "type": "string",
+      "required": true
+    },
+    "brandEnglish": {
+      "type": "string"
+    },
+    "heroTitle": {
+      "type": "string",
+      "required": true
+    },
+    "heroSubtitle": {
+      "type": "text"
+    },
+    "heroEnglish": {
+      "type": "text"
+    },
+    "introTitle": {
+      "type": "text"
+    },
+    "introText": {
+      "type": "text"
+    },
+    "craftTitle": {
+      "type": "text"
+    },
+    "craftText": {
+      "type": "text"
+    },
+    "craftImageUrl": {
+      "type": "string"
+    },
+    "craftImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "aboutTitle": {
+      "type": "text"
+    },
+    "aboutText": {
+      "type": "text"
+    },
+    "aboutImageUrl": {
+      "type": "string"
+    },
+    "aboutImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "phone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "address": {
+      "type": "text"
+    },
+    "icp": {
+      "type": "string"
+    },
+    "seoTitle": {
+      "type": "string"
+    },
+    "seoDescription": {
+      "type": "text"
+    },
+    "metrics": {
+      "type": "json"
+    }
+  }
+}

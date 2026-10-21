@@ -1,0 +1,15 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import crypto from 'node:crypto';
+const root = path.resolve(import.meta.dirname, '..');
+const secret = () => crypto.randomBytes(32).toString('hex');
+const cmsFile = path.join(root, 'apps/cms/.env');
+const webFile = path.join(root, 'apps/web/.env.local');
+const existingCms = fs.existsSync(cmsFile) ? fs.readFileSync(cmsFile, 'utf8') : '';
+const read = (key) => existingCms.match(new RegExp(`^${key}=(.+)$`, 'm'))?.[1];
+const inquiry = read('INQUIRY_SECRET') || secret();
+const revalidate = read('REVALIDATE_SECRET') || secret();
+if (!existingCms) fs.writeFileSync(cmsFile, `HOST=127.0.0.1\nPORT=1337\nPUBLIC_URL=http://127.0.0.1:1337\nAPP_KEYS=${[secret(),secret(),secret(),secret()].join(',')}\nAPI_TOKEN_SALT=${secret()}\nADMIN_JWT_SECRET=${secret()}\nTRANSFER_TOKEN_SALT=${secret()}\nJWT_SECRET=${secret()}\nENCRYPTION_KEY=${secret()}\nINQUIRY_SECRET=${inquiry}\nREVALIDATE_SECRET=${revalidate}\nDATABASE_CLIENT=sqlite\nDATABASE_FILENAME=.tmp/data.db\nWEB_URL=http://127.0.0.1:3000\nSEED_DEMO=true\nSTRAPI_TELEMETRY_DISABLED=true\n`);
+if (!fs.existsSync(webFile)) fs.writeFileSync(webFile, `STRAPI_URL=http://127.0.0.1:1337\nNEXT_PUBLIC_CMS_URL=http://127.0.0.1:1337\nSITE_URL=http://127.0.0.1:3000\nINQUIRY_SECRET=${inquiry}\nREVALIDATE_SECRET=${revalidate}\n`);
+fs.mkdirSync(path.join(root, 'apps/cms/.tmp'), { recursive: true });
+console.log('本地配置就绪；已有配置和数据库均已保留。');

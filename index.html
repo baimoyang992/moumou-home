@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="某某企业专注现代家具设计、制造与空间配套服务。">
+  <title>某某企业｜现代家具与空间解决方案</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header" id="siteHeader">
+    <a class="brand" href="#top" aria-label="某某企业首页">
+      <span class="brand-mark">M</span>
+      <span class="brand-copy"><strong>某某企业</strong><small>MODERN HOME</small></span>
+    </a>
+    <nav class="desktop-nav" aria-label="主导航">
+      <a href="#products">产品中心</a>
+      <a href="#cases">空间案例</a>
+      <a href="#craft">制造实力</a>
+      <a href="#about">关于我们</a>
+      <a href="#contact">联系我们</a>
+    </nav>
+    <div class="header-actions">
+      <button class="language" type="button" aria-label="切换语言">EN</button>
+      <button class="icon-btn menu-toggle" type="button" aria-label="打开菜单" aria-expanded="false">
+        <i data-lucide="menu"></i><span class="icon-fallback">☰</span>
+      </button>
+    </div>
+  </header>
+
+  <aside class="mobile-menu" aria-hidden="true">
+    <button class="icon-btn menu-close" type="button" aria-label="关闭菜单">
+      <i data-lucide="x"></i><span class="icon-fallback">×</span>
+    </button>
+    <nav aria-label="移动端导航">
+      <a href="#products"><span>01</span>产品中心</a>
+      <a href="#cases"><span>02</span>空间案例</a>
+      <a href="#craft"><span>03</span>制造实力</a>
+      <a href="#about"><span>04</span>关于我们</a>
+      <a href="#contact"><span>05</span>联系我们</a>
+    </nav>
+  </aside>
+
+  <main id="top">
+    <section class="hero" aria-label="品牌展示">
+      <div class="hero-slides">
+        <article class="hero-slide is-active" data-slide="0">
+          <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=2200&q=88" alt="温润现代客厅家具空间">
+        </article>
+        <article class="hero-slide" data-slide="1">
+          <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=2200&q=88" alt="现代原木餐厅空间">
+        </article>
+        <article class="hero-slide" data-slide="2">
+          <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=2200&q=88" alt="简约卧室家具空间">
+        </article>
+      </div>
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow">DESIGNED FOR EVERYDAY LIVING</p>
+        <h1>某某企业</h1>
+        <p class="hero-lead">让好家具，成为日常生活里长久的陪伴</p>
+        <div class="hero-cta">
+          <a class="btn btn-light" href="#products">探索产品 <i data-lucide="arrow-right"></i></a>
+          <button class="text-link open-inquiry" type="button">获取定制方案 <span>↗</span></button>
+        </div>
+      </div>
+      <div class="hero-bottom">
+        <div class="slide-controls" aria-label="轮播控制">
+          <button class="slide-dot is-active" data-target="0" type="button" aria-label="第1张"></button>
+          <button class="slide-dot" data-target="1" type="button" aria-label="第2张"></button>
+          <button class="slide-dot" data-target="2" type="button" aria-label="第3张"></button>
+        </div>
+        <div class="hero-promise">
+          <span>原创设计</span><span>品质制造</span><span>灵活交付</span>
+        </div>
+      </div>
+      <a class="scroll-hint" href="#intro" aria-label="向下浏览"><span></span></a>
+    </section>
+
+    <section class="intro section" id="intro">
+      <div class="section-kicker">ABOUT MOU MOU</div>
+      <div class="intro-grid">
+        <h2>认真做好每一件家具，<br>也认真对待每一个空间。</h2>
+        <div class="intro-copy">
+          <p>某某企业是一家集设计、生产、销售与空间配套服务于一体的现代家具企业。我们关注材料、尺度与使用感受，为住宅、办公和商业空间提供稳定、灵活的产品解决方案。</p>
+          <a class="arrow-link" href="#about">了解某某企业 <i data-lucide="arrow-up-right"></i></a>
+        </div>
+      </div>
+      <div class="metrics" aria-label="企业数据">
+        <div><strong>12<sup>+</sup></strong><span>年家具制造经验</span></div>
+        <div><strong>20,000<sup>㎡</sup></strong><span>现代化生产基地</span></div>
+        <div><strong>160<sup>+</sup></strong><span>稳定合作伙伴</span></div>
+        <div><strong>30<sup>+</sup></strong><span>覆盖城市与地区</span></div>
+      </div>
+    </section>
+
+    <section class="products section" id="products">
+      <div class="section-head">
+        <div>
+          <div class="section-kicker">PRODUCT COLLECTION</div>
+          <h2>产品系列</h2>
+        </div>
+        <p>从客厅到卧室，从单品到整套空间，我们用简洁设计回应真实生活。</p>
+      </div>
+      <div class="product-tabs" role="tablist" aria-label="产品分类">
+        <button class="is-active" data-filter="all" type="button" role="tab">全部</button>
+        <button data-filter="living" type="button" role="tab">客厅家具</button>
+        <button data-filter="dining" type="button" role="tab">餐厅家具</button>
+        <button data-filter="bedroom" type="button" role="tab">卧室家具</button>
+        <button data-filter="office" type="button" role="tab">办公家具</button>
+      </div>
+      <div class="product-grid">
+        <article class="product-card product-card-wide" data-category="living">
+          <a href="#contact" aria-label="查看云栖模块沙发">
+            <div class="product-image"><img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1400&q=86" alt="云栖模块沙发"></div>
+            <div class="product-info"><span>客厅系列</span><h3>云栖模块沙发</h3><i data-lucide="arrow-up-right"></i></div>
+          </a>
+        </article>
+        <article class="product-card" data-category="dining">
+          <a href="#contact" aria-label="查看木屿餐桌">
+            <div class="product-image"><img src="https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&w=1200&q=86" alt="木屿餐桌"></div>
+            <div class="product-info"><span>餐厅系列</span><h3>木屿餐桌</h3><i data-lucide="arrow-up-right"></i></div>
+          </a>
+        </article>
+        <article class="product-card" data-category="bedroom">
+          <a href="#contact" aria-label="查看暮山软床">
+            <div class="product-image"><img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=86" alt="暮山软床"></div>
+            <div class="product-info"><span>卧室系列</span><h3>暮山软床</h3><i data-lucide="arrow-up-right"></i></div>
+          </a>
+        </article>
+        <article class="product-card product-card-wide" data-category="office">
+          <a href="#contact" aria-label="查看序列办公桌组">
+            <div class="product-image"><img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1400&q=86" alt="序列办公桌组"></div>
+            <div class="product-info"><span>办公系列</span><h3>序列办公桌组</h3><i data-lucide="arrow-up-right"></i></div>
+          </a>
+        </article>
+      </div>
+      <div class="center-action"><button class="btn btn-dark open-inquiry" type="button">获取完整产品目录 <i data-lucide="download"></i></button></div>
+    </section>
+
+    <section class="craft" id="craft">
+      <div class="craft-image">
+        <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1800&q=88" alt="家具材料与制作细节">
+      </div>
+      <div class="craft-panel">
+        <div class="section-kicker light">CRAFT & QUALITY</div>
+        <h2>看得见的设计，<br>看不见的坚持。</h2>
+        <p>从材料甄选、结构设计到表面处理，每一道工序都有明确标准。稳定的制造体系，让设计落地，也让品质经得起日常使用。</p>
+        <div class="craft-points">
+          <div><span>01</span><strong>环保选材</strong><small>严选合规板材与涂装</small></div>
+          <div><span>02</span><strong>精工制造</strong><small>数字化设备与标准工艺</small></div>
+          <div><span>03</span><strong>全程质检</strong><small>关键节点品质可追溯</small></div>
+        </div>
+        <a class="arrow-link light-link" href="#contact">了解制造体系 <i data-lucide="arrow-up-right"></i></a>
+      </div>
+    </section>
+
+    <section class="cases section" id="cases">
+      <div class="section-head">
+        <div>
+          <div class="section-kicker">SPACE PROJECTS</div>
+          <h2>空间案例</h2>
+        </div>
+        <a class="arrow-link desktop-only" href="#contact">查看全部案例 <i data-lucide="arrow-right"></i></a>
+      </div>
+      <div class="case-grid">
+        <article class="case-card case-featured">
+          <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1600&q=86" alt="湖畔私宅客厅项目">
+          <div class="case-overlay"><span>RESIDENTIAL · 2026</span><h3>湖畔私宅</h3><p>以温润木色与轻盈体块，建立舒适有序的家庭公共空间。</p></div>
+        </article>
+        <article class="case-card">
+          <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1200&q=86" alt="新锐品牌办公空间项目">
+          <div class="case-overlay"><span>WORKPLACE · 2025</span><h3>新锐品牌办公室</h3></div>
+        </article>
+        <article class="case-card">
+          <img src="https://images.unsplash.com/photo-1549497538-303791108f95?auto=format&fit=crop&w=1200&q=86" alt="城市精品酒店项目">
+          <div class="case-overlay"><span>HOSPITALITY · 2025</span><h3>城市精品酒店</h3></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="about-copy">
+        <div class="section-kicker">WE MAKE MORE THAN FURNITURE</div>
+        <h2>不止制造家具，<br>更在意人与空间的关系。</h2>
+        <p>我们相信，合适的家具不应喧宾夺主，而应自然融入生活。某某企业以务实的设计、可靠的交付和长期服务，陪伴客户完成每一个理想空间。</p>
+        <div class="about-tags"><span>设计研发</span><span>柔性生产</span><span>工程配套</span><span>全国服务</span></div>
+        <a class="btn btn-outline" href="#contact">认识我们 <i data-lucide="arrow-right"></i></a>
+      </div>
+      <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1500&q=86" alt="某某企业设计团队工作场景">
+        <div class="image-note"><strong>以长期主义，<br>做好每一次交付。</strong><span>EST. 2014</span></div>
+      </div>
+    </section>
+
+    <section class="contact-band" id="contact">
+      <div>
+        <div class="section-kicker light">START A PROJECT</div>
+        <h2>有一个空间，<br>等我们一起完成。</h2>
+      </div>
+      <div class="contact-action">
+        <p>无论是产品采购、空间配套还是渠道合作，欢迎与我们聊聊。</p>
+        <button class="btn btn-light open-inquiry" type="button">立即咨询 <i data-lucide="message-circle"></i></button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <a class="brand brand-dark" href="#top">
+          <span class="brand-mark">M</span>
+          <span class="brand-copy"><strong>某某企业</strong><small>MODERN HOME</small></span>
+        </a>
+        <p>专注现代家具设计、制造<br>与空间配套服务</p>
+      </div>
+      <div class="footer-links">
+        <div><strong>产品服务</strong><a href="#products">客厅家具</a><a href="#products">餐厅家具</a><a href="#products">卧室家具</a><a href="#products">办公家具</a></div>
+        <div><strong>走进某某</strong><a href="#about">企业介绍</a><a href="#craft">制造实力</a><a href="#cases">空间案例</a><a href="#contact">合作咨询</a></div>
+      </div>
+      <div class="footer-contact">
+        <span>服务热线</span><a href="tel:4008888888">400-888-8888</a>
+        <span>商务邮箱</span><a href="mailto:hello@example.com">hello@example.com</a>
+        <small>中国 · 某某市某某区产业园 88 号</small>
+      </div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 某某企业 版权所有</span><span>本页面为官网视觉 Demo</span></div>
+  </footer>
+
+  <dialog class="inquiry-dialog" id="inquiryDialog">
+    <button class="icon-btn dialog-close" type="button" aria-label="关闭咨询窗口"><i data-lucide="x"></i><span class="icon-fallback">×</span></button>
+    <div class="dialog-heading"><span>PROJECT INQUIRY</span><h2>告诉我们您的需求</h2><p>提交后，我们将在 1 个工作日内与您联系。</p></div>
+    <form id="inquiryForm">
+      <label>您的称呼<input name="name" type="text" placeholder="怎么称呼您" required></label>
+      <label>联系电话<input name="phone" type="tel" placeholder="请输入手机号码" required></label>
+      <label>合作类型<select name="type"><option>家具采购</option><option>全屋配套</option><option>工程项目</option><option>经销合作</option></select></label>
+      <label class="full">需求简述<textarea name="message" rows="3" placeholder="例如：120㎡住宅，希望了解客厅和餐厅家具搭配"></textarea></label>
+      <button class="btn btn-dark full" type="submit">提交需求 <i data-lucide="arrow-right"></i></button>
+      <small class="full">Demo 演示表单，不会发送或保存任何信息。</small>
+    </form>
+  </dialog>
+
+  <div class="toast" role="status" aria-live="polite">已收到，这是一次 Demo 演示提交。</div>
+</body>
+</html>

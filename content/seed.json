@@ -1,0 +1,30 @@
+{
+  "website": {
+    "brandName": "某某企业", "brandEnglish": "MOU MOU HOME",
+    "heroTitle": "与生活，自然相处。", "heroSubtitle": "让设计回归日常，让好家具陪伴每一种生活。",
+    "heroEnglish": "Made for\nreal living.",
+    "introTitle": "把对生活的理解，\n做进每一件家具里。",
+    "introText": "我们相信，好家具不只关于外观，更关于每一天的真实感受。某某企业从设计、选材到制造，关注每一个细节，为住宅、办公与商业空间，创造温润、耐用而恰到好处的家具。",
+    "craftTitle": "有些坚持，\n藏在细节之中。", "craftText": "木材的纹理、织物的触感、结构的尺度，都是品质的一部分。我们以标准化制造承接原创设计，让每一份关于家的想象，都能踏实落地。", "craftImageUrl": "/images/craft.jpg",
+    "aboutTitle": "从一件家具，\n到一种生活方式。", "aboutText": "某某企业专注现代家具设计与空间配套，持续探索材料、工艺与生活的更多可能。我们与设计师、经销伙伴和每一位客户一起，让好设计走进更多真实的空间。", "aboutImageUrl": "/images/about.jpg",
+    "phone": "400-888-8888", "email": "hello@example.com", "address": "某某市某某区家具产业园 88 号", "icp": "",
+    "seoTitle": "某某企业｜现代家具与空间美学", "seoDescription": "某某企业专注现代家具设计、制造与空间配套，提供客厅、餐厅、卧室、办公家具及定制解决方案。",
+    "metrics": [{"value": "12", "unit": "+", "label": "年家具制造经验"},{"value": "20,000", "unit": "㎡", "label": "现代化生产基地"},{"value": "160", "unit": "+", "label": "长期合作伙伴"},{"value": "30", "unit": "+", "label": "服务城市与地区"}]
+  },
+  "heroSlides": [
+    { "title": "自然·共生", "subtitle": "一室光影，安放心之所向", "imageUrl": "/images/hero-living.jpg", "order": 1 },
+    { "title": "日常·有序", "subtitle": "在平凡的日常里，发现设计之美", "imageUrl": "/images/hero-dining.jpg", "order": 2 },
+    { "title": "静谧·自在", "subtitle": "让每一个角落，都有温暖的回应", "imageUrl": "/images/hero-bedroom.jpg", "order": 3 }
+  ],
+  "products": [
+    { "name": "云栖 · 模块沙发", "slug": "yunqi-sofa", "category": "living", "description": "宽松的尺度，细腻的织物触感。自由组合模块，让客厅随生活自在变化。", "imageUrl": "/images/sofa.jpg", "material": "高回弹海绵 / 实木框架 / 亲肤织物", "dimensions": "可按空间定制", "order": 1 },
+    { "name": "木屿 · 实木餐桌", "slug": "muyu-table", "category": "dining", "description": "以自然木色为底，让一家人的相聚更有温度。圆润边角，兼顾触感与日常安全。", "imageUrl": "/images/dining.jpg", "material": "实木 / 环保水性漆", "dimensions": "1800 × 900 × 750 mm", "order": 2 },
+    { "name": "暮山 · 软包床", "slug": "mushan-bed", "category": "bedroom", "description": "柔和线条与安静色调相映，给睡眠一个轻松、舒适的归处。", "imageUrl": "/images/bedroom.jpg", "material": "实木框架 / 高密度海绵 / 棉麻面料", "dimensions": "1800 × 2000 mm 床垫适配", "order": 3 },
+    { "name": "序列 · 办公桌组", "slug": "xulie-workspace", "category": "office", "description": "将专注与协作融入同一空间。清晰的收纳、灵活的组合，回应现代工作的不同节奏。", "imageUrl": "/images/office.jpg", "material": "环保板材 / 金属支架", "dimensions": "多种规格可选", "order": 4 }
+  ],
+  "projects": [
+    { "name": "湖畔私宅", "slug": "lakeside-residence", "category": "住宅空间", "location": "杭州", "year": "2026", "description": "木色、织物与光影交织，让家具成为自然的一部分。在松弛有度的空间中，发现生活原本的样子。", "imageUrl": "/images/case-home.jpg", "order": 1 },
+    { "name": "新锐设计事务所", "slug": "design-studio", "category": "办公空间", "location": "深圳", "year": "2025", "description": "开放与专注自由切换，为设计团队创造有序且灵活的协作空间。", "imageUrl": "/images/case-office.jpg", "order": 2 },
+    { "name": "隐里精品酒店", "slug": "yinli-hotel", "category": "商业空间", "location": "苏州", "year": "2025", "description": "温润材料与克制的细节，构成旅途中的一处安静居所。", "imageUrl": "/images/case-hotel.jpg", "order": 3 }
+  ]
+}

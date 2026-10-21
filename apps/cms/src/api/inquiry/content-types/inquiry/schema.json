@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "inquiries",
+  "info": {
+    "singularName": "inquiry",
+    "pluralName": "inquiries",
+    "displayName": "客户咨询",
+    "description": "仅管理员可以查看客户联系方式"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "maxLength": 80
+    },
+    "phone": {
+      "type": "string",
+      "required": true,
+      "maxLength": 40
+    },
+    "type": {
+      "type": "string",
+      "required": true
+    },
+    "message": {
+      "type": "text",
+      "maxLength": 2000
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "pending",
+        "contacted",
+        "completed"
+      ],
+      "default": "pending"
+    }
+  }
+}

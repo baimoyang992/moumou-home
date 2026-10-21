@@ -1,0 +1,7 @@
+{
+  "name": "@home/cms", "private": true, "version": "1.0.0", "description": "某某企业可视化内容管理后台",
+  "scripts": { "develop": "strapi develop", "build": "strapi build", "start": "node ../../scripts/start-cms.mjs", "strapi": "strapi" },
+  "dependencies": { "@strapi/strapi": "5.58.0", "@strapi/plugin-users-permissions": "5.58.0", "@strapi/provider-upload-local": "5.58.0", "better-sqlite3": "12.4.1", "pg": "^8.16.0", "react": "18.3.1", "react-dom": "18.3.1", "react-router-dom": "^6.30.0", "styled-components": "^6.1.0" },
+  "engines": { "node": ">=22.0.0 <=26.x.x" },
+  "strapi": { "uuid": "modern-home-local-cms" }
+}

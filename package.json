@@ -1,0 +1,9 @@
+{
+  "name": "modern-home", "version": "1.0.0", "private": true,
+  "packageManager": "pnpm@11.25.0",
+  "scripts": {
+    "dev": "node scripts/dev.mjs", "dev:web": "pnpm --filter @home/web dev",
+    "dev:cms": "pnpm --filter @home/cms develop", "build": "pnpm --filter @home/web build && pnpm --filter @home/cms build",
+    "setup": "node scripts/setup.mjs", "check": "pnpm --filter @home/web typecheck", "start": "node scripts/dev.mjs --production"
+  }
+}
